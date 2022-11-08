@@ -2,6 +2,7 @@ import torch
 import numpy as np
 import os
 import time
+import ttach as tta
 import torch.nn as nn
 from tqdm import tqdm
 from utils.util import AverageMeter, ensure_dir
@@ -165,3 +166,5 @@ class Tester(object):
         print("     + Checkpoint file: '{}' , Loaded ! \n"
               "     + Prepare to test ! ! !"
               .format(self.resume_ckpt_path))
+        # test-time augmentation
+        self.model = tta.SegmentationTTAWrapper(self.model, tta.aliases.d4_transform(), merge_mode='mean')

@@ -27,7 +27,7 @@ git clone https://github.com/YJ-He/Flood_Mapping_SSL.git
 **(2) Create a conda environment.**  
 ```
 conda env create -f environment.yaml
-conda activate class_hyper
+conda activate flood_mapping
 ```
 
 ### Training

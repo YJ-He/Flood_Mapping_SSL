@@ -74,5 +74,6 @@ dependencies:
     - tifffile==2022.5.4
     - tomli==2.0.1
     - tqdm==4.64.0
+    - ttach==0.0.3
     - zope-interface==5.4.0
-prefix: C:\ProgramData\Anaconda3\envs\class_hyper
+prefix: C:\ProgramData\Anaconda3\envs\flood_mapping
