@@ -52,12 +52,6 @@ If this repo is useful in your research, please kindly consider citing our paper
 }
 ```
 
-##  4.References
-[1] [Semi-Supervised Semantic Segmentation with Cross Pseudo Supervision](https://arxiv.org/abs/2106.01226)  
-[2] [Semi-supervised semantic segmentation needs strong, varied perturbations](https://arxiv.org/abs/1906.01916)  
-[3] [ClassMix: Segmentation-Based Data Augmentation for Semi-Supervised Learning](https://arxiv.org/abs/2007.07936)
-...  
-
 **If our work give you some insights and hints, star me please! Thank you~**
 
 
