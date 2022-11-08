@@ -1,4 +1,4 @@
-name: class_hyper
+name: flood_mapping
 channels:
   - pytorch
   - defaults
