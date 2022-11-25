@@ -14,7 +14,7 @@ After obtain the datasets, you need to process first and generate lists of image
     /val_label.txt
     /train_unsup_image.txt
 ```
-## 2. Code
+## 2. Usage
 ### Installation
 The code is developed using Python 3.7 with PyTorch 1.9.1. The code is developed and tested using singel RTX 2080 Ti GPU.
 
