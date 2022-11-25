@@ -1,7 +1,6 @@
 # **Enhancement of Urban Floodwater Mapping From Aerial Imagery With Dense Shadows via Semisupervised Learning**
 
-This is a PyTorch implementation of a semi-supervised learning framework for flood mapping. We will make it open once the relevant article is published.
-The manuscript can be visited via https://ieeexplore.ieee.org/abstract/document/9924583/
+This is an official PyTorch implementation of a semi-supervised learning framework for flood mapping. The manuscript can be visited via https://ieeexplore.ieee.org/abstract/document/9924583/
 
 ## 1. Directory Structure    
 After obtain the datasets, you need to process first and generate lists of image/label files and place as the structure shown below. Every txt file contains the full absolute path of the files, each image/label per line.
