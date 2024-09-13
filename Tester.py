@@ -96,7 +96,7 @@ class Tester(object):
 
                 probability[probability < 0.5] = 0
                 probability[probability >= 0.5] = 1
-
+                self._save_pred(probability, filenames)
                 pred = probability.view(-1).long()
                 label = gts.view(-1).long()
 
@@ -168,3 +168,15 @@ class Tester(object):
               .format(self.resume_ckpt_path))
         # test-time augmentation
         self.model = tta.SegmentationTTAWrapper(self.model, tta.aliases.d4_transform(), merge_mode='mean')
+
+    def _save_pred(self, binary_map, filenames):
+        """
+        save binary_map
+        """
+        for index, map in enumerate(binary_map):
+            map = np.asarray(map.cpu(), dtype=np.uint8) * 255
+            map = Image.fromarray(map)
+            filename = filenames[index].split('\\')[-1].split('.')
+            save_filename = filename[0] + '_binary.tif'
+            save_path = os.path.join(self.predict_path, save_filename)
+            map.save(save_path, compression='tiff_lzw')
