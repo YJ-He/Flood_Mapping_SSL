@@ -89,7 +89,7 @@ class Tester(object):
                 gts = gts.to(self.device, non_blocking=True)
 
                 # sup loss
-                sup_logits_l = self.model(imgs, step=1)
+                sup_logits_l = self.model(imgs)
                 sup_logits_l = torch.squeeze(sup_logits_l, 1)
                 probability = torch.sigmoid(sup_logits_l)
                 loss = self.loss(sup_logits_l, gts)
