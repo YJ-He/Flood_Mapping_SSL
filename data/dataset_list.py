@@ -7,8 +7,8 @@ import cv2
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
-rgb_mean = (0.485, 0.456, 0.406)
-rgb_std = (0.229, 0.224, 0.225)
+rgb_mean = (0.4353, 0.4452, 0.4131)
+rgb_std = (0.2044, 0.1924, 0.2013)
 
 class MyDataset(Dataset):
     def __init__(self,
