@@ -3,7 +3,7 @@
 This is an official PyTorch implementation of a semi-supervised learning framework for flood mapping. The manuscript can be visited via https://ieeexplore.ieee.org/abstract/document/9924583/. The datasets used in this paper can be accessed from [[GoogleDirve]](https://drive.google.com/drive/folders/1pNIfaiHdzeL5-hA0sp8ms4wJTCBiRgLz?usp=sharing) or [[BaiduDisk]](https://pan.baidu.com/s/1GfWQIq3J_XVd0MWLhdKVOA?pwd=r5wa).
 
 ## 1. Directory Structure    
-After obtain the datasets, you need to process first and generate lists of image/label files and place as the structure shown below. Every txt file contains the full absolute path of the files, each image/label per line.
+After obtain the datasets, you need to process first and generate lists of image/label files and place as the structure shown below. Every txt file contains the full absolute path of the files, each image/label per line. Note:for `train_unsup_image.txt`, you can just copy `test_image.txt` and then rename it to `train_unsup_image.txt`.
 ```
 /root
     /train_image.txt
