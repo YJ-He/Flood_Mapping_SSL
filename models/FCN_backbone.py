@@ -1,5 +1,6 @@
 import torch
 import torch.nn as nn
+from torchvision import models
 from torchvision.models.vgg import VGG
 from models.ASPP import build_aspp
 
