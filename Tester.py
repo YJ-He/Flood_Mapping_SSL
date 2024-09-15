@@ -7,6 +7,7 @@ import torch.nn as nn
 from tqdm import tqdm
 from utils.util import AverageMeter, ensure_dir
 from utils.metrics import Evaluator
+from PIL import Image
 
 class Tester(object):
     def __init__(self,
